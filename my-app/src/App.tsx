@@ -1,11 +1,19 @@
 import React from 'react';
+import doodie from './assets/doodie.png';
+import './App.css';
 
 function App() {
   return (
     <div style={styles.container}>
-      <h1>Hello, React + TypeScript!</h1>
-      <p>This is a simple starter interface.</p>
-      <button onClick={() => alert('Button clicked!')}>Click Me</button>
+      <div style={styles.header}>
+        <img src={doodie} alt="Doodie logo" style={styles.image} />
+        <h1 style={styles.title}>Welcome to Doodle Budget!</h1>
+      </div>
+      <p> Who are you selecting?.</p>
+      
+      <button className="claire-button" onClick={() => alert('Welcome, Claire!')}>Claire</button>
+      <button className="wilf-button" onClick={() => alert('Welcome, Wilfred!')}>Wilfred</button>
+      <button className="woo-button" onClick={() => alert('Welcome, the Woos!')}>Wilfred + Claire</button>
     </div>
   );
 }
