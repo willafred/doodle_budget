@@ -1,0 +1,57 @@
+
+
+.claire-button,
+.wilf-button,
+.woo-button {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.claire-button {
+  background-color: #ffe6e6;
+  color: #cc3366;
+}
+
+.wilf-button {
+  background-color: #000099;
+  color: white;
+}
+
+.woo-button {
+  background-color: #ffcc00;
+  color: #333;
+}
+
+.claire-button:hover,
+.wilf-button:hover,
+.woo-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes cartoonHop {
+  0%   { transform: translateY(0) scale(1) rotate(0deg); }
+  20%  { transform: translateY(-40px) scale(1.1) rotate(0deg); }
+  40%  { transform: translateY(10px) scale(0.95) rotate(0deg); }
+  60%  { transform: translateY(-20px) scale(1.05) rotate(0deg); }
+  80%  { transform: translateY(5px) scale(0.98) rotate(0deg); }
+  100% { transform: translateY(0) scale(1) rotate(0deg); }
+}
+
+.bunny-image {
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.bunny-image:hover {
+  animation: cartoonHop 0.8s ease-out;
+}
+
+.bunny-image:active {
+  animation: cartoonHop 1.8s ease-out;
+}

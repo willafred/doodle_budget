@@ -1,49 +1,30 @@
-
-
-.claire-button {
-  background-color: mistyrose;
-  color: black;
-  border: none;
-  border-radius: 8px;
-  padding: 10px 20px;
-  margin: 10px;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+.dashboard-container {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
-.claire-button:hover {
-  background-color: mistyrose;
+.card-row {
+  display: flex;
+  gap: 1.5rem;
 }
 
-.wilf-button {
-  background-color: navy;
-  color: white;
-  border: none;
-  border-radius: 8px;
-  padding: 10px 20px;
-  margin: 10px;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+.card {
+  background: white;
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-weight: bold;
+  text-align: center;
 }
 
-.wilf-button:hover {
-  background-color: navy;
+.card.half {
+  flex: 1;
 }
 
-.woo-button {
-  background-color: Gold;
-  color: black;
-  border: none;
-  border-radius: 8px;
-  padding: 10px 20px;
-  margin: 10px;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.woo-button:hover {
-  background-color: Gold;
+.card.full {
+  width: 100%;
 }
